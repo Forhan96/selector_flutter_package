@@ -1,6 +1,6 @@
 name: selection_dialogs
 description: A Flutter package for showing country and language selection dialog.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Forhan96/selector_flutter_package.git
 
 environment:
