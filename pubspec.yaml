@@ -1,7 +1,7 @@
 name: selector
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Forhan96/selector_flutter_package.git
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_screenutil: ^5.5.4
 
 dev_dependencies:
   flutter_test:
@@ -22,9 +23,10 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
-  # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  uses-material-design: true
+    # To add assets to your package, add an assets section, like this:
+  assets:
+    - assets/images/flags/
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
