@@ -112,9 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
           showDialog(
             context: context,
             builder: (BuildContext context) {
-              return CountrySelectionDialog(onTap: (Country country) {
-                print("${country.name}---${country.isoCode}");
-              });
+              return CountrySelectionDialog(
+                onTap: (Country country) {
+                  print("${country.name}---${country.isoCode}");
+                },
+              );
               // return LanguageSelector(
               //   onTap: (LanguageData item) {
               //     print("${item.name}---${item.locale}---${item.flag}---${item.nativeName}");
