@@ -64,6 +64,7 @@ class CountrySelectionDialog extends StatelessWidget {
                 return InkWell(
                   onTap: () {
                     onTap(item);
+                    Navigator.pop(context);
                   },
                   child: Container(
                     margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 16),
