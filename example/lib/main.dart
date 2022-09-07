@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:selector/selector.dart';
+import 'package:selector/country_selector_dialog.dart';
+import 'package:selector/models/country.dart';
 
 void main() {
   runApp(const MyApp());
@@ -109,10 +110,19 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showDialog(
-              context: context,
-              builder: (BuildContext context) {
-                return LanguageSelector();
+            context: context,
+            builder: (BuildContext context) {
+              return CountrySelectionDialog(onTap: (Country country) {
+                print("${country.name}---${country.isoCode}");
               });
+              // return LanguageSelector(
+              //   onTap: (LanguageData item) {
+              //     print("${item.name}---${item.locale}---${item.flag}---${item.nativeName}");
+              //     // Navigator.pop(context);
+              //   },
+              // );
+            },
+          );
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
