@@ -1,6 +1,7 @@
 name: selector
 description: A new Flutter package project.
 version: 0.0.1
+author: Forhan Ahmed Chowdhury
 homepage: https://github.com/Forhan96/selector_flutter_package.git
 
 environment:
