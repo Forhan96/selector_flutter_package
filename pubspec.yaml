@@ -1,5 +1,5 @@
 name: selector
-description: A new Flutter package project.
+description: A Flutter package for showing country and language selection dialog.
 version: 0.0.1
 authors:
   - Forhan Ahmed Chowdhury

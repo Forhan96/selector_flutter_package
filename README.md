@@ -1,4 +1,4 @@
-A Flutter plugin for showing country and language selection dialog
+A Flutter package for showing country and language selection dialog
 
 ## Features
 
