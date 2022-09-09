@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:selection_dialogs/country_convert.dart';
 import 'package:selection_dialogs/country_selector_dialog.dart';
+import 'package:selection_dialogs/gender_selector_dialog.dart';
 import 'package:selection_dialogs/language_convert.dart';
 import 'package:selection_dialogs/language_selector_dialog.dart';
 import 'package:selection_dialogs/models/country.dart';
@@ -67,6 +68,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 showDialog(
                   context: context,
                   builder: (BuildContext context) {
+                    return GenderSelector(
+                      onTap: (item) {
+                        print("----------------$item");
+                        // Navigator.pop(context);
+                      },
+                    );
+                  },
+                );
+              },
+              child: Text("Gender"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
                     return CountrySelector(
                       onTap: (Country country) {
                         print("${country.name}---${country.isoCode}");
@@ -96,14 +113,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 String name = LanguageConvert().codeToName("bn");
                 print(name);
               },
-              child: Text("Language Name to Code"),
+              child: Text("Language Code to Name"),
             ),
             ElevatedButton(
               onPressed: () {
                 String code = LanguageConvert().nameToCode("Bengali");
                 print(code);
               },
-              child: Text("Language Code to Name"),
+              child: Text("Language Name to Code"),
             ),
           ],
         ),

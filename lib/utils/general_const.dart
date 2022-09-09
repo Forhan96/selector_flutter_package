@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:selection_dialogs/models/country.dart';
 import 'package:selection_dialogs/models/language.dart';
 
+final List genderList = ["Male", "Female", "Rather not say"];
+
 final List<Country> countryList = [
   Country("Afghanistan", "AF", "assets/images/flags/afghanistan.png"),
   Country("Albania", "AL", "assets/images/flags/albania.png"),
