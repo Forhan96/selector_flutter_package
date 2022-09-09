@@ -115,13 +115,3 @@ class LanguageSelector extends StatelessWidget {
     );
   }
 }
-
-List<LanguageData> getModelItems() {
-  final List<LanguageData> modelItems = [];
-  langData.forEach((key, value) {
-    modelItems.add(value);
-  });
-  print(modelItems);
-
-  return modelItems;
-}

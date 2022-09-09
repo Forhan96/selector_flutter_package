@@ -402,3 +402,12 @@ Map<String, LanguageData> langData = {
     "assets/images/flags/ukraine.png",
   ),
 };
+
+List<LanguageData> getModelItems() {
+  final List<LanguageData> modelItems = [];
+  langData.forEach((key, value) {
+    modelItems.add(value);
+  });
+
+  return modelItems;
+}

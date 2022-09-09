@@ -3,9 +3,9 @@ import 'package:selection_dialogs/models/country.dart';
 
 import 'utils/general_const.dart';
 
-class CountrySelectionDialog extends StatelessWidget {
+class CountrySelector extends StatelessWidget {
   final Function onTap;
-  const CountrySelectionDialog({Key? key, required this.onTap}) : super(key: key);
+  const CountrySelector({Key? key, required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
